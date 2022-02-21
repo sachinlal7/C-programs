@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    char ch[20];
+    int i,n,j;
+    scanf("%d",&n);
+    fflush(stdin);
+    scanf("%s",ch);
+    j=strlen(ch);
+    for(i=0;i<j;i++)
+    {
+     if(i==n)   
+    ch[i-1]=toupper(ch[i-1]);
+    }
+  // ch[i]='\0';
+    printf("%s",ch);
+    return 0;
+}
