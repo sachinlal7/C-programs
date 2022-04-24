@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void main()
+{
+	int a,b,c,c1;
+	scanf("%d %d",&a,&b);
+	c=a+b;
+	if(a>b)
+	c1=a-b;
+	else 
+	c1=b-a;
+	printf("%d \n%d",c,c1);
+}
